@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Quest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-shell">
+
+    <!-- Header -->
+    <header class="game-header">
+      <div class="brand">
+        <span class="brand-mark">✦</span>
+        <div>
+          <p class="eyebrow">ADVENTURE MODE</p>
+          <h1>Flexbox <span>Quest</span></h1>
+        </div>
+      </div>
+
+      <div class="game-info">
+        <div class="stat">♥ Lives: <strong>3</strong></div>
+        <div class="stat">◈ Coins: <strong>120</strong></div>
+        <div class="stat">⚑ Level: <strong>1</strong></div>
+        <div class="stat">★ Score: <strong>1250</strong></div>
+      </div>
+
+      <div class="header-actions">
+        <button class="button">Ⅱ Pause</button>
+        <button class="button button-primary">☰ Menu</button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Game Area -->
+      <section class="game-area">
+        <div class="world-topline">
+          <div>
+            <p class="eyebrow">WORLD 01 · THE GREEN HILLS</p>
+            <h2>The First Adventure</h2>
+          </div>
+          <span class="world-badge">● QUEST ACTIVE</span>
+        </div>
+
+        <div class="scene">
+          <div class="sun"></div>
+          <div class="cloud cloud-one"></div>
+          <div class="cloud cloud-two"></div>
+
+          <div class="scene-content">
+            <div class="scene-tip">Collect all the stars!</div>
+
+            <div class="game-characters">
+              <div class="character">
+                <div class="player">•ᴗ•</div>
+                <span>YOU</span>
+              </div>
+
+              <div class="character">
+                <div class="star">★</div>
+                <span>+50 XP</span>
+              </div>
+            </div>
+
+            <div class="platform-row">
+              <div class="platform"></div>
+              <div class="platform small-platform"></div>
+            </div>
+
+            <div class="platform-row">
+              <div class="platform"></div>
+              <div class="platform"></div>
+            </div>
+          </div>
+
+          <div class="ground"></div>
+        </div>
+
+        <div class="game-area-footer">
+          <span>● Checkpoint saved</span>
+          <span>Explore · Collect · Complete</span>
+        </div>
+      </section>
+
+      <!-- Game Panels -->
+      <section class="game-panels">
+
+        <!-- Controls -->
+        <section class="panel controls-panel">
+          <div class="panel-heading">
+            <div class="panel-icon">⌘</div>
+            <div>
+              <p class="eyebrow">PLAYER INPUT</p>
+              <h2>Controls</h2>
+            </div>
+          </div>
+
+          <p class="panel-description">
+            Use the buttons to plan your next move.
+          </p>
+
+          <div class="direction-pad">
+            <div class="control-row">
+              <button class="direction-button">↑</button>
+            </div>
+
+            <div class="control-row">
+              <button class="direction-button">←</button>
+              <button class="direction-button">↓</button>
+              <button class="direction-button">→</button>
+            </div>
+          </div>
+
+          <button class="button jump-button">↟ JUMP</button>
+
+          <p class="keyboard-hint">
+            KEYBOARD:
+            <kbd>W</kbd>
+            <kbd>A</kbd>
+            <kbd>S</kbd>
+            <kbd>D</kbd>
+          </p>
+        </section>
+
+        <!-- Inventory -->
+        <section class="panel inventory-panel">
+          <div class="panel-heading">
+            <div class="panel-icon">▤</div>
+            <div>
+              <p class="eyebrow">YOUR COLLECTION</p>
+              <h2>Inventory</h2>
+            </div>
+            <span class="count-pill">4 ITEMS</span>
+          </div>
+
+          <p class="panel-description">
+            Useful things for the journey ahead.
+          </p>
+
+          <div class="inventory-items">
+            <div class="inventory-item">
+              <span class="item-emoji">⚔️</span>
+              <strong>Sword</strong>
+              <small>Weapon</small>
+            </div>
+
+            <div class="inventory-item">
+              <span class="item-emoji">🛡️</span>
+              <strong>Shield</strong>
+              <small>Defense</small>
+            </div>
+
+            <div class="inventory-item">
+              <span class="item-emoji">🧪</span>
+              <strong>Potion</strong>
+              <small>Healing</small>
+            </div>
+
+            <div class="inventory-item">
+              <span class="item-emoji">🗝️</span>
+              <strong>Key</strong>
+              <small>Quest item</small>
+            </div>
+          </div>
+
+          <div class="inventory-note">
+            ✦ A rare item might be hiding nearby.
+          </div>
+        </section>
+
+        <!-- Quest -->
+        <section class="panel quest-panel">
+          <div class="panel-heading">
+            <div class="panel-icon">☷</div>
+            <div>
+              <p class="eyebrow">YOUR OBJECTIVES</p>
+              <h2>Quest Log</h2>
+            </div>
+          </div>
+
+          <p class="panel-description">
+            Complete tasks to earn rewards.
+          </p>
+
+          <div class="quest-list">
+            <div class="quest-item">
+              <span>✓ Collect 3 Stars</span>
+              <strong>1 <span>/ 3</span></strong>
+            </div>
+
+            <div class="quest-progress">
+              <span style="width: 33%"></span>
+            </div>
+
+            <div class="quest-item">
+              <span>○ Find the Golden Key</span>
+              <strong>0 <span>/ 1</span></strong>
+            </div>
+
+            <div class="quest-progress">
+              <span style="width: 0%"></span>
+            </div>
+
+            <div class="quest-item">
+              <span>○ Defeat the Monster</span>
+              <strong>0 <span>/ 1</span></strong>
+            </div>
+
+            <div class="quest-progress">
+              <span style="width: 0%"></span>
+            </div>
+          </div>
+
+          <div class="reward-row">
+            <span>Next reward</span>
+            <strong>✦ 250 XP</strong>
+          </div>
+        </section>
+
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="game-footer">
+      <div>
+        <span class="footer-brand">✦ FLEXBOX QUEST</span>
+        <span class="footer-muted">
+          A mini adventure built with CSS Flexbox.
+        </span>
+      </div>
+
+      <span class="footer-right">MADE FOR EXPLORERS ♥</span>
+    </footer>
+
+  </div>
+</body>
+</html>
